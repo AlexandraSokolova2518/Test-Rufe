@@ -3,10 +3,7 @@ from instr import *
 from second_win import *
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (
-    QApplication, QWidget,
-    QVBoxLayout, QHBoxLayout
-    QLabel, QPushButton)
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton
 
 class MainWin(QWidget):
     def __init__(self):
