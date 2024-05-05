@@ -1,5 +1,6 @@
 # напиши здесь код для второго экрана приложения
 from PyQt5.QtCore import Qt, QTimer, QTime
+from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import (
        QApplication, QWidget,
        QHBoxLayout, QVBoxLayout,
@@ -113,7 +114,7 @@ class TestWin(QWidget):
   
    def next_click(self):
        self.hide()
-       self.exp = Experiment(int(self.line_age.text()), self.line_test1.text(), self.line_test2.text(), self.line_test3.text())
+       self.exp = Experiments(int(self.line_age.text()), self.line_test1.text(), self.line_test2.text(), self.line_test3.text())
        self.fw = FinalWin()
 
 
@@ -182,6 +183,6 @@ class TestWin(QWidget):
 
    def connects(self):
        self.btn_next.clicked.connect(self.next_click)
-       self.btn_text1.clicked.connect(self.timer_test)
-       self.btn_text2.clicked.connect(self.timer_sits)
-       self.btn_text3.clicked.connect(self.timer_final)
+       self.btn_test1.clicked.connect(self.timer_test)
+       self.btn_test2.clicked.connect(self.timer_sits)
+       self.btn_test3.clicked.connect(self.timer_final)
